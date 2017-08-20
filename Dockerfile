@@ -22,5 +22,5 @@ RUN add-apt-repository \
 RUN apt-get update && \
     apt-get install -y docker-ce
 
-RUN usermod -aG rancher jenkins
+RUN usermod -aG 1100 jenkins
 USER jenkins
